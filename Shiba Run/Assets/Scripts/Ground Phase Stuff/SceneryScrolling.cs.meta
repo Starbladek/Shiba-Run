@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d9cccf3f9a787ad4dbf15757fa5b42e1
+timeCreated: 1514162655
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - streetSegmentPrefab: {fileID: 1004253551156924, guid: 7a8cd079ec958e147b95ccba03954b74,
+      type: 2}
+  - houseSpriteUnbroken: {fileID: 21300000, guid: 0c6178491cb8e654d8c1f7e24c4bb158,
+      type: 3}
+  - houseSpriteBroken: {fileID: 21300000, guid: 0e33ad568d6e63f4d96ca4327b9438da,
+      type: 3}
+  - cliffSprite: {fileID: 21300000, guid: a76fe43d65b755b47b5d5f5362705157, type: 3}
+  - backgroundNearSprite: {instanceID: 0}
+  - backgroundFarSprite: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
