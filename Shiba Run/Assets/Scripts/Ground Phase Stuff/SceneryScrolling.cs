@@ -140,9 +140,4 @@ public class SceneryScrolling : MonoBehaviour
 			index--;
 		}
     }
-
-	public void SetCliffMode(bool temp)
-	{
-		cliffMode = temp;
-	}
 }

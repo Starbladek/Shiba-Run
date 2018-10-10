@@ -7,12 +7,10 @@ using UnityEngine.UI;
 
 //TODO:
 //Important
-//  -Refactor glider transition
 //  -Brainstorm obstacles that could be in the flying section
 //      *Premade normal fireballs that travel in a sine wave, but what is their spawn pattern?
 //      *Partially randomly spawned green fireballs that have a slight homing effect?
 //      *Chunks of debris that shoot out of the bottom of the screen on every drum snap?
-//  -Improve ground section by adding more obstacles (the truck?)
 //  -Checkpoint/reset system
 //
 //Polish

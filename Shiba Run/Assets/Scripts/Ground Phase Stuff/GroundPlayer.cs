@@ -16,7 +16,8 @@ public class GroundPlayer : MonoBehaviour
     MovementType movementType = MovementType.Normal;
 
     public Sprite shadowSprite;
-    GameObject shadow;
+    [HideInInspector]
+    public GameObject shadow;
 
     Animator anim;
 

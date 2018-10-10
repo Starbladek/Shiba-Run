@@ -15,9 +15,6 @@ public class SimpleObject : MonoBehaviour
         velocity = MathEquations.CalculateLaunchVelocity(transform.position, _endPos, -gravity, _maxHeight);
     }
 
-    public delegate void BounceAction(GameObject objectToAccel);
-    public static event BounceAction OnBounce;
-
     void Update()
     {
         velocity.x += xAcceleration * Time.deltaTime;
@@ -30,11 +27,7 @@ public class SimpleObject : MonoBehaviour
             {
                 transform.position = new Vector2(transform.position.x, -transform.position.y);
                 velocity.y = -velocity.y * bounceFactor;
-                if (OnBounce != null) OnBounce(gameObject); //This triggers for every object subscribed to the event on screen for some reason?
-                                                            //For example, if a single object bounces while it's the only object active, it runs the OnBounce
-                                                            //event once. If a single object bounces while there are five other objects active, it runs the
-                                                            //OnBounce event six times, resulting in the velocity of the object being multiplied by 12
-                                                            //rather than 2.
+                velocity.x *= 2;
             }
         }
 
