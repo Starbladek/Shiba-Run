@@ -27,6 +27,8 @@ public class PhaseHandler : MonoBehaviour
     public SimpleObject housePlankPrefab;
     public Truck truckPrefab;
     public LavaShotSpawner lavaShotSpawnerPrefab;
+    public DriftingShotSpawner driftingShotSpawnerPrefab;
+    public BirdSpawner birdSpawnerPrefab;
     public MeteorSpawner meteorSpawnerPrefab;
     public GliderTransition gliderTransitionPrefab;
 

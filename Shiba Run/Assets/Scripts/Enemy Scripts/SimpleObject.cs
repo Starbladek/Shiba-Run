@@ -27,7 +27,6 @@ public class SimpleObject : MonoBehaviour
             {
                 transform.position = new Vector2(transform.position.x, -transform.position.y);
                 velocity.y = -velocity.y * bounceFactor;
-                velocity.x *= 2;
             }
         }
 

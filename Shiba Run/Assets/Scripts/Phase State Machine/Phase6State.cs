@@ -3,6 +3,8 @@ using Prime31.StateKit;
 
 public class Phase6State : SKState<PhaseHandler>
 {
+    BirdSpawner birdSpawner;
+
     public override void begin()
     {
         if (_context.currentlyResetting)
@@ -15,6 +17,7 @@ public class Phase6State : SKState<PhaseHandler>
         }
 
         _context.music.time = GameMaster.instance.phase6Start;
+        birdSpawner = Object.Instantiate(_context.birdSpawnerPrefab);
     }
 
     public override void update(float deltaTime)
@@ -33,6 +36,6 @@ public class Phase6State : SKState<PhaseHandler>
 
     public override void end()
     {
-        
+        Object.Destroy(birdSpawner);
     }
 }

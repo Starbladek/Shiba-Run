@@ -3,6 +3,8 @@ using Prime31.StateKit;
 
 public class Phase5State : SKState<PhaseHandler>
 {
+    DriftingShotSpawner driftingShotSpawner;
+
     public override void begin()
     {
         if (_context.currentlyResetting)
@@ -15,6 +17,7 @@ public class Phase5State : SKState<PhaseHandler>
         }
 
         _context.music.time = GameMaster.instance.phase5Start;
+        driftingShotSpawner = Object.Instantiate(_context.driftingShotSpawnerPrefab);
     }
 
     public override void update(float deltaTime)
@@ -33,6 +36,6 @@ public class Phase5State : SKState<PhaseHandler>
 
     public override void end()
     {
-
+        Object.Destroy(driftingShotSpawner);
     }
 }
