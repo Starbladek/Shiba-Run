@@ -5,7 +5,7 @@ using UnityEngine;
 public class DriftingShot : MonoBehaviour
 {
     Vector3 homePos;
-    float speed = 4;
+    float speed = 6;
 
     float mainDeg;
     float sinValue;

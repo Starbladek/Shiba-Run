@@ -29,6 +29,7 @@ public class PhaseHandler : MonoBehaviour
     public LavaShotSpawner lavaShotSpawnerPrefab;
     public DriftingShotSpawner driftingShotSpawnerPrefab;
     public BirdSpawner birdSpawnerPrefab;
+    public RoofBirdSpawner roofBirdSpawnerPrefab;
     public MeteorSpawner meteorSpawnerPrefab;
     public GliderTransition gliderTransitionPrefab;
 

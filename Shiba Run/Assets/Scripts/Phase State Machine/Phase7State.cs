@@ -16,6 +16,7 @@ public class Phase7State : SKState<PhaseHandler>
 
         _context.music.time = GameMaster.instance.phase7Start;
         _context.CreateMeteorSpawner(GameMaster.instance.screenRightEdge, -2f);
+        Object.Instantiate(_context.roofBirdSpawnerPrefab);
     }
 
     public override void update(float deltaTime)

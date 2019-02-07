@@ -14,7 +14,13 @@ public class Bird : MonoBehaviour
 
     void Update()
     {
+        Vector2 prevPos = transform.position;
         transform.Translate(new Vector2(-speed, 0) * Time.deltaTime);
+
+        //tryna get the bird to rotate slightly depending on its change in Y position lmao (it doesn't work)
+        float AngleRad = Mathf.Atan2(prevPos.y - transform.position.y, prevPos.x - transform.position.x);
+        float angle = (180f / Mathf.PI) * AngleRad;
+        if (angle != transform.localEulerAngles.z) transform.localEulerAngles = new Vector3(transform.rotation.x, transform.rotation.y, angle);
     }
 
     IEnumerator SwoopingAction()

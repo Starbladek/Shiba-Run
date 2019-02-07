@@ -8,11 +8,6 @@ public class BirdSpawner : MonoBehaviour
 
     public GameObject birdPrefab;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         timer -= Time.deltaTime;

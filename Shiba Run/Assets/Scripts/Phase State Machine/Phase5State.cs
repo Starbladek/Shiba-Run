@@ -18,6 +18,10 @@ public class Phase5State : SKState<PhaseHandler>
 
         _context.music.time = GameMaster.instance.phase5Start;
         driftingShotSpawner = Object.Instantiate(_context.driftingShotSpawnerPrefab);
+        LeanTween.delayedCall(_context.gameObject, GameMaster.instance.barLength * 3, () =>
+        {
+            Object.Destroy(driftingShotSpawner);
+        });
     }
 
     public override void update(float deltaTime)
@@ -36,6 +40,6 @@ public class Phase5State : SKState<PhaseHandler>
 
     public override void end()
     {
-        Object.Destroy(driftingShotSpawner);
+        
     }
 }

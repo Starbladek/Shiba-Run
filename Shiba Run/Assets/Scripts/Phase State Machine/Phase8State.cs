@@ -13,6 +13,7 @@ public class Phase8State : SKState<PhaseHandler>
             _context.groundPlayer.SetTargetPosOriginitionX(-3.5f);
             _context.groundScenery.active = true;
             _context.CreateMeteorSpawner(GameMaster.instance.screenRightEdge, -2f);
+            Object.Instantiate(_context.roofBirdSpawnerPrefab);
         }
 
         _context.music.time = GameMaster.instance.phase8Start;
@@ -20,7 +21,7 @@ public class Phase8State : SKState<PhaseHandler>
         {
             _context.CreateMeteorSpawner(GameMaster.instance.screenRightEdge, -2f);
         });
-        LeanTween.delayedCall(_context.gameObject, 5.5f, () =>
+        LeanTween.delayedCall(_context.gameObject, 4f, () =>
         {
             GameObject[] loseEntitySpawners = GameObject.FindGameObjectsWithTag("LoseEntitySpawner");
             foreach (GameObject loseEntitySpawner in loseEntitySpawners) Object.Destroy(loseEntitySpawner);

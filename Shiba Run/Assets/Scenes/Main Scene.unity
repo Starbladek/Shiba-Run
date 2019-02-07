@@ -601,7 +601,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Press ''G'' to toggle slowdown
 
-    Press a number to warp to that phase (1, 2, 3, 4, or 5)'
+    Press a number to warp to that phase (or R to warp to the sky)'
 --- !u!222 &1286704010
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1216,6 +1216,8 @@ MonoBehaviour:
   driftingShotSpawnerPrefab: {fileID: 7147897233500820153, guid: 5311bf24d5b4d8d42bcb4c12c9109bdb,
     type: 3}
   birdSpawnerPrefab: {fileID: 9081840517204359790, guid: d767e387872b7dc4e9b7f8b1154704ca,
+    type: 3}
+  roofBirdSpawnerPrefab: {fileID: 4950777297442855480, guid: 46f1e2fa735c85141982d9380cdadfe4,
     type: 3}
   meteorSpawnerPrefab: {fileID: 114892131647723350, guid: 4dbf35aead4ebad49b50530bb8eb7249,
     type: 3}

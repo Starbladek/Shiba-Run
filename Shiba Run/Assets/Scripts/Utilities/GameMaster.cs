@@ -102,7 +102,13 @@ public class GameMaster : MonoBehaviour
                 }).setEase(LeanTweenType.easeInCubic).setUseEstimatedTime(true);
             }
         }
+
         Time.timeScale = timeScale;
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
 
         //Constantly update the screen bounds (could be performance taxing?)
         screenTopEdge = Camera.main.ScreenToWorldPoint(new Vector3(0, Screen.height, -(Camera.main.transform.position.z))).y;
